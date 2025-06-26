@@ -65,46 +65,36 @@ export class MultimediaService {
         nombre: 'Tema Principal - The Last of Us 2',
         tipo: 'audio',
         formato: '.mp3',
-        url: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav',
+        url: 'https://mindalae.upec.edu.ec/Master/Intro%20The%20last%20Of%20Us%20angular.mp3',
         duracion: 180,
         fechaSubida: new Date('2024-01-15'),
         tamano: 5242880,
         descripcion: 'Música principal del juego compuesta por Gustavo Santaolalla'
       },
-      {
-        id: 'audio-2',
-        nombre: 'Diálogo - Ellie y Joel',
-        tipo: 'audio',
-        formato: '.mp3',
-        url: 'https://www.soundjay.com/misc/sounds/bell-ringing-05.wav',
-        duracion: 120,
-        fechaSubida: new Date('2024-01-20'),
-        tamano: 3145728,
-        descripcion: 'Conversación emotiva entre Ellie y Joel en Jackson'
-      },
+      
       {
         id: 'video-1',
         nombre: 'Trailer Oficial - The Last of Us 2',
         tipo: 'video',
         formato: '.mp4',
-        url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        url: 'https://mindalae.upec.edu.ec/Master/vide1.mp4?_t=1750963241',
         duracion: 300,
         fechaSubida: new Date('2024-01-10'),
         tamano: 52428800,
-        descripcion: 'Trailer oficial revelando la historia de Ellie',
-        thumbnail: 'https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg'
+        descripcion: 'Revelando la historia de Ellie',
+        thumbnail: 'https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/0kRqUeSBIbQzz7cen3c989c6.jpg'
       },
       {
         id: 'video-2',
         nombre: 'Gameplay - Seattle Exploration',
         tipo: 'video',
         formato: '.mp4',
-        url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+        url: 'https://mindalae.upec.edu.ec/Master/Gustavo%20Santaolalla%20-%20It%20Can%20t%20Last%20(from%20The%20Last%20of%20Us%20Part%20II)%20(720p).mp4?_t=1750964604',
         duracion: 450,
         fechaSubida: new Date('2024-01-25'),
         tamano: 104857600,
-        descripcion: 'Exploración de Seattle en busca de Abby',
-        thumbnail: 'https://uploads.worldanvil.com/uploads/images/2b15c848c6f3e46aba209c5e36443d3a.jpg'
+        descripcion: 'Exploración de Seattle',
+        thumbnail: 'https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/0kRqUeSBIbQzz7cen3c989c6.jpg'
       }
     ];
 
