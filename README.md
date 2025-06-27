@@ -23,7 +23,6 @@ TLOU 2 Companion es una aplicación web interactiva inspirada en el universo de 
 🛠️ Tecnologías utilizadas
 ⚙️ Angular
 💡 TypeScript
-🎨 HTML5 y CSS3
 
 🧱 Diseño modular y escalable
 
