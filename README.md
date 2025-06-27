@@ -8,49 +8,32 @@ TLOU 2 Companion es una aplicación web interactiva inspirada en el universo de 
 
 🌟 Características principales
 🎬 Hero Section: Presentación visual impactante con acceso rápido a las secciones.
-
 📱 Navegación avanzada: Menú fijo y adaptable a dispositivos móviles.
-
 🧍‍♂️ Gestión de personajes: Fichas detalladas con habilidades e imágenes.
-
 ⌛ Línea de tiempo: Visualiza eventos clave de la historia.
-
 🖼️ Galería multimedia: Imágenes del universo TLOU.
-
 🎥 Videos destacados: Clips y escenas importantes.
-
 🎧 Reproductor de audio: Acompañamiento sonoro inmersivo.
-
 🔐 Sistema de autenticación: Registro e inicio de sesión seguro.
-
 📝 Modal de registro: Formulario moderno integrado en la navegación.
-
 📱 Diseño responsive: Compatible con todos los dispositivos.
-
 ✨ Animaciones visuales: Parallax, partículas, scroll animado y más.
 
 
 🛠️ Tecnologías utilizadas
-⚙️ Angular (componentes, servicios, routing, observables)
-
+⚙️ Angular
 💡 TypeScript
-
-🎨 HTML5 y CSS3 (custom properties, responsive, animaciones)
-
-🔄 RxJS
+🎨 HTML5 y CSS3
 
 🧱 Diseño modular y escalable
 
 🚀 Instalación y ejecución
 🔁 Clona este repositorio:
 git clone <URL-del-repositorio>
-
 📦 Instala las dependencias:
 npm install
-
 ▶️ Ejecuta la app en modo desarrollo:
 npm start
-
 🌐 Abre tu navegador en:
 http://localhost:4200
 
