@@ -82,6 +82,8 @@ import { CommonModule } from '@angular/common';
       justify-content: center;
       overflow: hidden;
       color: var(--color-texto-claro);
+      /* Asegura que el contenido esté centrado */
+      text-align: center;
     }
 
     .hero-background {
@@ -108,6 +110,14 @@ import { CommonModule } from '@angular/common';
       text-align: center;
       max-width: 800px;
       padding: var(--espaciado-md);
+      padding-top: 120px; /* Aumenta este valor según lo que necesites */
+      margin-left: auto;
+      margin-right: auto;
+      /* Centrado horizontal explícito */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .hero-title {
@@ -116,6 +126,8 @@ import { CommonModule } from '@angular/common';
       line-height: 1.1;
       margin-bottom: var(--espaciado-md);
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      width: 100%;
     }
 
     .title-line {
@@ -138,6 +150,7 @@ import { CommonModule } from '@angular/common';
       margin-bottom: var(--espaciado-lg);
       color: rgba(245, 245, 245, 0.9);
       animation: fadeInUp 1s ease-out 0.6s both;
+      text-align: center;
     }
 
     .hero-stats {
@@ -146,6 +159,8 @@ import { CommonModule } from '@angular/common';
       gap: var(--espaciado-md);
       margin-bottom: var(--espaciado-lg);
       flex-wrap: wrap;
+      width: 100%;
+      text-align: center;
     }
 
     .stat-item {
@@ -158,6 +173,8 @@ import { CommonModule } from '@angular/common';
       min-width: 140px;
       transition: all var(--transicion-media);
       animation: fadeInUp 1s ease-out calc(0.9s + var(--i) * 0.2s) both;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .stat-item:hover {
@@ -188,6 +205,8 @@ import { CommonModule } from '@angular/common';
       justify-content: center;
       flex-wrap: wrap;
       animation: fadeInUp 1s ease-out 1.2s both;
+      width: 100%;
+      text-align: center;
     }
 
     .scroll-indicator {
@@ -381,10 +400,13 @@ export class HeroComponent implements OnInit {
    */
   scrollToPersonajes() {
     const personajesSection = document.querySelector('.personajes-section');
+    const header = document.querySelector('header'); // Ajusta el selector si tu header tiene otra clase/etiqueta
     if (personajesSection) {
-      personajesSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      const headerHeight = header ? header.clientHeight : 0;
+      const sectionTop = (personajesSection as HTMLElement).getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: sectionTop - headerHeight - 24, // 24px extra para margen visual
+        behavior: 'smooth'
       });
     }
   }
@@ -394,10 +416,13 @@ export class HeroComponent implements OnInit {
    */
   scrollToTimeline() {
     const timelineSection = document.querySelector('.timeline-section');
+    const header = document.querySelector('header');
     if (timelineSection) {
-      timelineSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      const headerHeight = header ? header.clientHeight : 0;
+      const sectionTop = (timelineSection as HTMLElement).getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: sectionTop - headerHeight - 24,
+        behavior: 'smooth'
       });
     }
   }
